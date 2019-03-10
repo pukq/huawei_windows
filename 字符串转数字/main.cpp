@@ -13,9 +13,6 @@ vector<cross> crossData(string);
 
 int main(int argc, char *argv[])
 {
-	vector<vector<int> > cars;
-	vector<car> CarArray;
-	car cartemp;
 	std::cout << "Begin" << std::endl;
 
 	if (argc < 3) {
@@ -51,23 +48,23 @@ int main(int argc, char *argv[])
 	roadStructArray = roadData(roadPath);
 	cout << "道路数据读取结果：" << endl;
 	for (auto i : roadStructArray) {
-		cout << "carId:" << i.Id << " ";
-		cout << "oriId:" << i.Len << " ";
-		cout << "desId:" << i.speed << " ";
-		cout << "speed:" << i.lane << " ";
-		cout << "speed:" << i.oriId<< " ";
-		cout << "time:" << i.desId << endl;
+		cout << "Id:" << i.Id << " ";
+		cout << "Len:" << i.Len << " ";
+		cout << "speed:" << i.speed << " ";
+		cout << "lane:" << i.lane << " ";
+		cout << "oriId:" << i.oriId<< " ";
+		cout << "desId:" << i.desId << endl;
 	}
 	//cross
 	vector<cross> crossStructArray;
 	crossStructArray = crossData(crossPath);
 	cout << "路口数据读取结果：" << endl;
 	for (auto i : crossStructArray) {
-		cout << "carId:" << i.id << " ";
-		cout << "oriId:" << i.upId << " ";
-		cout << "desId:" << i.rightId << " ";
-		cout << "speed:" << i.downId << " ";
-		cout << "time:" << i.leftId << endl;
+		cout << "id:" << i.id << " ";
+		cout << "upId:" << i.upId << " ";
+		cout << "rightId:" << i.rightId << " ";
+		cout << "downId:" << i.downId << " ";
+		cout << "leftId:" << i.leftId << endl;
 	}
 
 	//继续
