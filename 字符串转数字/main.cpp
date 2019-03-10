@@ -70,6 +70,8 @@ int main(int argc, char *argv[])
 		cout << "time:" << i.leftId << endl;
 	}
 
+	//¼ÌÐø
+
 				   // TODO:process
 
 				   // TODO:write output file
